@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
+</head>
+
+<body>
+    <h3>Student Survey Feedback</h3>
+    <img src="istockphoto-1461630610-612x612.jpg" alt="Survey Image">
+    <p>Thank you for taking the time to complete the survey,Your feedback is valuable to us.</p>
+    <p>Learn More about web development<a href="https://www.freecodecamp.org/" target="_blank"> here</a>.</p>
+    <hr>
+    <form action="#">
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <label for="Age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+        <label for="Current Education Level">Current Education Level:</label><br>
+        <select id="education" name="education" required>
+            <option value="">Select your education level</option>
+            <option value="high_school">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+        </select><br><br>
+        <fieldset>
+            <legend>How Satisfied Are You With The Course?</legend>
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied" required>
+            <label for="satisfied">Excellent</label><br>
+            <input type="radio" id="neutral" name="satisfaction" value="neutral" required>
+            <label for="neutral">Good</label><br>
+            <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied" required>
+            <label for="dissatisfied">Average</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Which Topics Are You Interested In?</legend>
+            <input type="checkbox" id="topic1" name="topics" value="web_development">
+            <label for="topic1">HTML</label><br>
+            <input type="checkbox" id="topic2" name="topics" value="data_science">
+            <label for="topic2">CSS</label><br>
+            <input type="checkbox" id="topic3" name="topics" value="machine_learning">
+            <label for="topic3">JavaScript</label><br>
+            <input type="checkbox" id="topic4" name="topics" value="cybersecurity">
+            <label for="topic4">React</label><br>
+        </fieldset>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"
+            placeholder="Please share any additional comments..."></textarea>
+        <br><br>
+        <button type="submit">Submit Survey</button>
+    </form>
+    <hr>
+</body>
+<footer>
+    <p>Footer: &copy; 2024 Ikram Ul Haq. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
